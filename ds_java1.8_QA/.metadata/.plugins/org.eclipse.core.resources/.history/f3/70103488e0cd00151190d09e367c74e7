@@ -1,0 +1,22 @@
+package traversal.tree.dsEssyIndia;
+
+import tree.dsEssyIndia.TreeNode;
+
+public class Main {
+	public static void main(String[] args) {
+		DeclareTree objDeclareTree=new DeclareTree();
+		TreeNode objTreeNode=new TreeNode();
+		TreeNode objTreeNodeLeft;
+		TreeNode objTreeNodeRight;
+		objTreeNode.setData(10);
+		objTreeNodeLeft=objDeclareTree.addLeft(objTreeNode, 8);
+		objTreeNodeRight=objDeclareTree.addRight(objTreeNode, 12);
+		objDeclareTree.addLeft(objTreeNodeLeft, 7);
+		objDeclareTree.addRight(objTreeNodeLeft, 9);
+		objDeclareTree.addLeft(objTreeNodeRight, 11);
+		objDeclareTree.addRight(objTreeNodeRight, 13);
+		
+		PreOrder objPreOrder=new PreOrder();
+		objPreOrder.preOrderTraversal(objTreeNode);
+	}	
+}

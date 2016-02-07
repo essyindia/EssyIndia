@@ -1,0 +1,13 @@
+package traversal.tree.dsEssyIndia;
+
+import tree.dsEssyIndia.TreeNode;
+
+public class Main {
+	public static void main(String[] args) {
+		DeclareTree objDeclareTree=new DeclareTree();
+		TreeNode objTreeNode=new TreeNode();
+		objTreeNode.setData(10);
+		objDeclareTree.addLeft(objTreeNode, 9);
+		objDeclareTree.addRight(objTreeNode, 11);
+	}	
+}
