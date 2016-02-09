@@ -1,0 +1,38 @@
+package multithread.coreJavaEssyIndia;
+
+import java.util.*;
+
+public class ListEx {
+	public static void practiceListEx(){
+		ArrayList objArrayList=new ArrayList();
+		Vector objVector=new Vector();
+		LinkedList objLinkedList=new LinkedList();
+		
+		objArrayList.add(0,15);
+		objVector.add(0,15);
+		objLinkedList.add(0,15);
+		objArrayList.add(1,'c');
+		objVector.add(1,'c');
+		objLinkedList.add(1,'c');
+		objArrayList.add(2,true);
+		objVector.add(2,true);
+		objLinkedList.add(2,true);
+		objArrayList.add(3,"ArrayList");
+		objVector.add(3,"ArrayList");
+		objLinkedList.add(3,"ArrayList");
+		
+		Iterator itr=objArrayList.iterator();
+		while(itr.hasNext()){ 
+			System.out.println(itr.next());
+		}
+		
+		for (Object object : objArrayList) {
+			System.out.println(object);
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		practiceListEx();
+	}
+}

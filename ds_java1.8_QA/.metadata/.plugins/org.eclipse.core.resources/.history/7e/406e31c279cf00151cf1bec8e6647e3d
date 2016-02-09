@@ -1,0 +1,74 @@
+package multithread.coreJavaEssyIndia;
+
+import java.util.*;
+
+public class ListEx {
+	public static void practiceListEx(){
+		ArrayList objArrayList=new ArrayList();
+		Vector objVector=new Vector();
+		LinkedList objLinkedList=new LinkedList();
+		
+		objArrayList.add(0,15);
+		objVector.add(0,16);
+		objLinkedList.add(0,17);
+		objArrayList.add(1,'c');
+		objVector.add(1,'d');
+		objLinkedList.add(1,'e');
+		objArrayList.add(2,true);
+		objVector.add(2,false);
+		objLinkedList.add(2,true);
+		objArrayList.add(3,"ArrayList");
+		objVector.add(3,"Vector");
+		objLinkedList.add(3,"LinkedList");
+		
+		Iterator itrArrayList=objArrayList.iterator();	
+		while(itrArrayList.hasNext()){ 
+			System.out.println(itrArrayList.next()); 
+		}
+		
+		ListIterator listItrArrayList=objArrayList.listIterator();	
+		while(listItrArrayList.hasNext()){ 
+			System.out.println(listItrArrayList.next());
+		}
+		if(listItrArrayList.hasPrevious())
+			System.out.println(listItrArrayList.previous());
+		
+		for (Object obj : objArrayList) {
+			System.out.println(obj);
+		}
+		
+		Iterator itrVector=objVector.iterator();	
+		while(itrVector.hasNext()){ 
+			System.out.println(itrVector.next()); 
+		}	
+		
+		ListIterator listItrVector=objVector.listIterator();	 
+		while(listItrVector.hasNext()){ 
+			System.out.println(listItrVector.next()); 
+		}
+		if(listItrVector.hasPrevious())
+			listItrVector.previous();
+
+		Iterator itrLinkedList=objLinkedList.iterator();
+		while(itrLinkedList.hasNext()){ 
+			System.out.println(itrLinkedList.next());	 
+		}
+		
+		ListIterator listItrLinkedList=objLinkedList.listIterator();
+		if(listItrLinkedList.hasNext())
+		listItrLinkedList.next();
+		while(listItrLinkedList.hasPrevious()){ 
+			System.out.println(listItrLinkedList.previous()); 
+		}
+		
+		Iterator itrLinkedListRev=objLinkedList.descendingIterator();
+		while(itrLinkedListRev.hasNext()){ 
+			System.out.println(itrLinkedListRev.next());	 
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		practiceListEx();
+	}
+}

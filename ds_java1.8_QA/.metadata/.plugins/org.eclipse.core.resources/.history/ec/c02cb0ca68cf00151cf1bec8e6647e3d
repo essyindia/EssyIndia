@@ -1,0 +1,10 @@
+package multithread.coreJavaEssyIndia;
+
+import java.util.*;
+
+public class ListEx {
+	public void practiceListEx(){
+		ArrayList objArrayList=new ArrayList();
+	}
+
+}

@@ -1,0 +1,17 @@
+package multithread.coreJavaEssyIndia;
+
+import java.util.*;
+
+public class ListEx {
+	public static void practiceListEx(){
+		ArrayList objArrayList=new ArrayList();
+		Vector obVector=new Vector();
+		LinkedList objLinkedList=new LinkedList();
+		
+		objArrayList.add(1,15);
+		System.out.println((int)objArrayList.get(0));
+	}
+	public static void main(String[] args) {
+		practiceListEx();
+	}
+}

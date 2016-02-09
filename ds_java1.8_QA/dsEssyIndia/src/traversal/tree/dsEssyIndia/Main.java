@@ -22,8 +22,18 @@ public class Main {
 		System.out.println("\n--End--");
 
 		System.out.println("--Pre Order Traversal--");
-		PreOrder objPreOrder=new PreOrder();
+		PreOrderRecA objPreOrder=new PreOrderRecA();
 		objPreOrder.preOrderTraversal(objTreeNode);
+		System.out.println("\n--End--");
+
+		System.out.println("--In Order Traversal--");
+		InOrderRecA objInOrder=new InOrderRecA();
+		objInOrder.inOrderTraversal(objTreeNode);
+		System.out.println("\n--End--");
+
+		System.out.println("--Post Order Traversal--");
+		PostOrderRecA objPostOrder=new PostOrderRecA();
+		objPostOrder.postOrderTraversal(objTreeNode);
 		System.out.println("\n--End--");
 	}	
 }

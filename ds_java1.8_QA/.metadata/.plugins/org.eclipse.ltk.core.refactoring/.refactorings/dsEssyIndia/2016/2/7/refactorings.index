@@ -2,3 +2,6 @@
 1454843489463	Rename package 'tree_dsEssyIndia'
 1454846483478	Move compilation unit
 1454853570702	Rename type 'SampleTree'
+1455046346396	Rename type 'PostOrder'
+1455046374710	Rename type 'InOrder'
+1455046401620	Rename type 'PreOrder'

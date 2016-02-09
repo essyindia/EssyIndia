@@ -1,0 +1,18 @@
+package traversal.tree.dsEssyIndia;
+
+import tree.dsEssyIndia.TreeNode;
+
+public class InOrder {
+	public void inOrderTraversal(TreeNode objTreeNode){
+		if(objTreeNode!=null){
+			if(objTreeNode.getLeft()!=null){
+				inOrderTraversal(objTreeNode.getLeft());
+			}
+			System.out.print(objTreeNode.getData()+", ");
+			if(objTreeNode.getRight()!=null){
+				inOrderTraversal(objTreeNode.getRight());
+			}
+		}
+	}
+
+}
